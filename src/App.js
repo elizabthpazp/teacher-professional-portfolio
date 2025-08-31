@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-
+import { Analytics } from "@vercel/analytics/react"
 // Import components
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -30,6 +30,7 @@ function App() {
         <SpanishClasses />
         <Footer />
         <Toaster />
+         <Analytics />
       </div>
     </ThemeProvider>
   );
